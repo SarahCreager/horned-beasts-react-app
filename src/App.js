@@ -13,11 +13,9 @@ function App() {
       <Container>
         <Main />
       </Container>
-      
       <Footer author="By Sarah Creager"/>
     </>
   );
-  
 }
 
 export default App;

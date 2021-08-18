@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function Main() {
   const animalArray = dataArray.map(animal => {
     return (
-      <HornedBeast 
+      <HornedBeast
         title={animal.title}
         image_url={animal.image_url}
         description={animal.description}

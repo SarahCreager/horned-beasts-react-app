@@ -1,6 +1,6 @@
 # horned-beasts-react-app
 
-I created webpage that allows the user to select a favorite item from 3 randomly displayed items. After each selection, the list refreshes with 3 new items, for a total of 25 selections. This website tracks the selections made and displays a list report and a chart of the times an item was clicked verses how many times it was shown. The data collected persistently tracks total views and times shown between  page refreshes.
+I created webpage that allows the user to select a favorite horned animal. After each selection, the horned animal's favorite count will increase.
 
 ## Author: Sarah Creager
 ### With Credit to: 
