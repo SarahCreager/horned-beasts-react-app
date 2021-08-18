@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+/* --------------------Global Styling-----------------------*/
+*{
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#body {
+  margin-left:200px;
+  margin-right: 200px;
+  background: #E3E3E3;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* ------------------------Header-----------------------*/
+h1 {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding-top: 4%;
+  padding-bottom: 2%;
+  font-family: 'Fjalla One', sans-serif;
+  color: #4E4E4E;
+  transition: all 0.8s ease-in-out;
 }
 
-.App-link {
-  color: #61dafb;
+h1:hover{
+  color:#B1B1B1;
+  transform: scale(1.1);
+}
+/* ------------------------Main------------------------*/
+.container{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#card {
+  margin-left: 6%;
+  margin-right: 6%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  height: 400px;
+  transition: all 0.8s ease-in-out;
+}
+
+#card:hover {
+  transform: scale(1.1);
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
+
+#favoriteHeart {
+  width: 50px;
+  height: 50px;
+}
+
+#favoriteCount {
+  display: inline-block;
+  padding-left: 4%;
 }
