@@ -10,7 +10,7 @@ class HornedBeast extends Component {
   constructor() {
     super(constructor);
     this.state = {
-      "favorites": 0
+      'favorites': 0
     };
   }
 
@@ -39,7 +39,7 @@ class HornedBeast extends Component {
         </Card>
       </Col>
     );
-  }   
+  }
 }
 
 export default HornedBeast;
