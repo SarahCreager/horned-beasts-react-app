@@ -23,11 +23,11 @@ class App extends Component {
     this.setState({ showImageModal: false });
   }
 
-  imageModalHandler = () => {
+  imageModalHandler = (currentBeast) => {
     this.setState({showImageModal: true});
-    this.setState({title: 'hello'}); //TODO: figure out how to reference the clicked card's title
-    this.setState({description: 'can you hear me'}); //TODO: figure out how to reference the clicked card's description
-    this.setState({image_url: ''}); //TODO: figure out how to reference the clicked card's image_url
+    this.setState({title: currentBeast.title}); 
+    this.setState({description: currentBeast.description}); 
+    this.setState({image_url: currentBeast.image_url}); 
   }
 
   render(){
@@ -37,7 +37,7 @@ class App extends Component {
         <Container>
           <Main onImgClick = {this.imageModalHandler}/>
         </Container>
-        <SelectedBeast show = {this.state.showImageModal} onClose = {this.closeHandler} title= {this.state.title} description= {this.state.description} image_url= {this.state.image_url} />
+        <SelectedBeast show = {this.state.showImageModal} onClose = {this.closeHandler} title = {this.state.title} description = {this.state.description} image_url = {this.state.image_url}/>
         <Footer author="By Sarah Creager"/>
       </>
     );
