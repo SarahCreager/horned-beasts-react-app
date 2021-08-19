@@ -1,5 +1,5 @@
 import {Component} from 'react';
-import heartIcon from './heartIcon.png';
+import heartIcon from './assets/heartIcon.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
@@ -7,25 +7,26 @@ import Card from 'react-bootstrap/Card';
 
 
 class HornedBeast extends Component {
-  constructor() {
-    super(constructor);
+
+  constructor(props) {
+    super(props);
     this.state = {
       'favorites': 0
     };
   }
 
-  handleClick = () => {
+  handleHeartClick = () => {
     const newFavorites = this.state.favorites + 1;
     this.setState({
       favorites: newFavorites
     });
   }
 
-  render (){
+  render() {
     return (
       <Col sm={3}>
-        <Card onClick={this.handleClick} id="card">
-          <Card.Img variant="top" src={this.props.image_url} alt={this.props.title} title={this.props.title}/>
+        <Card id="card" onClick={this.handleHeartClick}>
+          <Card.Img onClick={this.props.onCardImgClick} variant="top" src={this.props.image_url} alt={this.props.title} title={this.props.title}/>
           <Card.Body>
             <Card.Title>{this.props.title}</Card.Title>
             <Card.Text>

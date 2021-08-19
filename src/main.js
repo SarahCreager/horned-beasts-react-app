@@ -1,21 +1,29 @@
 import HornedBeast from './hornedBeast';
 import dataArray from './data.json';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Component } from 'react';
 
 
 
-function Main() {
-  const animalArray = dataArray.map(animal => {
-    return (
-      <HornedBeast
-        title={animal.title}
-        image_url={animal.image_url}
-        description={animal.description}
-      />
-    );
-  });
+class Main extends Component {
 
-  return animalArray;
+  render(){
+    const animalArray = dataArray.map((animal, index) => {
+      return (
+        <HornedBeast
+          key = {index}
+          title={animal.title}
+          image_url={animal.image_url}
+          description={animal.description}
+          onCardImgClick={this.props.onImgClick}
+        />
+      );
+    });
+
+    return animalArray;
+  }
 }
 
 export default Main;
+
+
