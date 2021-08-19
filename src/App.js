@@ -25,9 +25,9 @@ class App extends Component {
 
   imageModalHandler = (currentBeast) => {
     this.setState({showImageModal: true});
-    this.setState({title: currentBeast.title}); 
-    this.setState({description: currentBeast.description}); 
-    this.setState({image_url: currentBeast.image_url}); 
+    this.setState({title: currentBeast.title});
+    this.setState({description: currentBeast.description});
+    this.setState({image_url: currentBeast.image_url});
   }
 
   render(){
