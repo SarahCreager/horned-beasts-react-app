@@ -26,7 +26,7 @@ class App extends Component {
   imageModalHandler = () => {
     this.setState({showImageModal: true});
     this.setState({title: 'hello'}); //TODO: figure out how to reference the clicked card's title
-    this.setState({description: 'can you hear me'});  //TODO: figure out how to reference the clicked card's description
+    this.setState({description: 'can you hear me'}); //TODO: figure out how to reference the clicked card's description
     this.setState({image_url: ''}); //TODO: figure out how to reference the clicked card's image_url
   }
 
