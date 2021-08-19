@@ -26,7 +26,7 @@ class HornedBeast extends Component {
     return (
       <Col sm={3}>
         <Card id="card" onClick={this.handleHeartClick}>
-          <Card.Img onClick={this.props.onCardImgClick} variant="top" src={this.props.image_url} alt={this.props.title} title={this.props.title}/>
+          <Card.Img onClick={() => this.props.onCardImgClick(this.props)} variant="top" src={this.props.image_url} alt={this.props.title} title={this.props.title}/>
           <Card.Body>
             <Card.Title>{this.props.title}</Card.Title>
             <Card.Text>

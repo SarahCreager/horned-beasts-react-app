@@ -6,7 +6,7 @@ I created webpage that allows the user to select a favorite horned animal. After
 ### With Credit to: 
 * Joe Ivans: helped fix an issue with the connection between GitHub and my local repo.
 * Haustin Kimbrough: Worked on this lab together.
-* Justin Hamerly: Worked on this lab together.
+* Justin Hamerly and Thomas O'Rourke: Worked on this lab together and helped me understand how to pass state into my modal.
 
 ### Links and Resources
 * [.gitignore code](https://www.gitignore.io/api/node,linux,macos,windows,visualstudiocode)
@@ -49,6 +49,7 @@ Actual time needed to complete: 52 min
 
 ### Number and name of feature: Feature 4: Display a Modal
 
+ROUND ONE
 Estimate of time needed to complete: 2 hours
 
 Start time: 3:03pm
@@ -56,3 +57,12 @@ Start time: 3:03pm
 Finish time: 7:00pm
 
 Actual time needed to complete: 4 hours
+
+ROUND TWO
+Estimate of time needed to complete: 1 hour
+
+Start time: 8:20am
+
+Finish time: 8:40am
+
+Actual time needed to complete: 20 min

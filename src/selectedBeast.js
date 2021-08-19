@@ -15,8 +15,10 @@ class SelectedBeast extends Component {
         <Modal.Header closeButton>
           <Modal.Title>{this.props.title}</Modal.Title>
         </Modal.Header>
-        <img src={this.props.img} alt="animal image" />
-        <Modal.Body>{this.props.description}</Modal.Body>
+        <Modal.Body>
+          <img src={this.props.image_url} alt="animal image"></img>
+          <p>{this.props.description}</p>
+        </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={this.props.onClose}>
             Close
