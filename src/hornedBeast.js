@@ -29,13 +29,10 @@ class HornedBeast extends Component {
           <Card.Img onClick={() => this.props.onCardImgClick(this.props)} variant="top" src={this.props.image_url} alt={this.props.title} title={this.props.title}/>
           <Card.Body>
             <Card.Title>{this.props.title}</Card.Title>
-            <Card.Text>
-              {this.props.description}
-            </Card.Text>
+            <Card.Text>{this.props.description}</Card.Text>
+            <Card.Text>Horns: {this.props.horns}</Card.Text>
             <Card.Img id="favoriteHeart" src={heartIcon} alt="heart icon" />
-            <Card.Text id="favoriteCount">
-              {this.state.favorites}
-            </Card.Text>
+            <Card.Text id="favoriteCount">{this.state.favorites}</Card.Text>
           </Card.Body>
         </Card>
       </Col>
