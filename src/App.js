@@ -3,9 +3,9 @@ import Header from './header';
 import Main from './main';
 import Footer from './footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Container from 'react-bootstrap/Container';
 import { Component } from 'react';
 import SelectedBeast from './selectedBeast';
+
 
 
 class App extends Component {
@@ -34,11 +34,9 @@ class App extends Component {
     return (
       <>
         <Header title="Horned Animals"/>
-        <Container>
-          <Main onImgClick = {this.imageModalHandler}/>
-        </Container>
+        <Main onImgClick = {this.imageModalHandler}/>
         <SelectedBeast show = {this.state.showImageModal} onClose = {this.closeHandler} title = {this.state.title} description = {this.state.description} image_url = {this.state.image_url}/>
-        <Footer author="By Sarah Creager"/>
+        <div id="footerDiv"><Footer author="By Sarah Creager"/></div>
       </>
     );
   }
