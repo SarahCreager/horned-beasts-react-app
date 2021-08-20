@@ -17,14 +17,14 @@ class Main extends Component {
 
   handleChange = (event) => {
     const selection = event.target.value;
-    
-    if (selection === "1") {
+
+    if (selection === '1') {
       this.setState({ hornsArray: allHorns.filter (animal => animal.horns === 1 )});
-    } else if (selection === "2") {
+    } else if (selection === '2') {
       this.setState({ hornsArray: allHorns.filter (animal => animal.horns === 2 )});
-    } else if (selection === "3") {
+    } else if (selection === '3') {
       this.setState({ hornsArray: allHorns.filter (animal => animal.horns === 3 )});
-    } else if (selection === "100") {
+    } else if (selection === '100') {
       this.setState({ hornsArray: allHorns.filter (animal => animal.horns === 100 )});
     } else {
       this.setState({ hornsArray: allHorns});
